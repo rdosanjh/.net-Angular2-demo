@@ -1,0 +1,13 @@
+app-section-box{
+    margin-bottom: 20px;
+    display: flex; 
+}
+
+.inner{
+    display: flex;    
+    align-items: baseline;
+}
+
+.rightDetails{
+    margin-left: auto;
+}

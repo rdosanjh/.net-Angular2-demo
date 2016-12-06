@@ -1,0 +1,25 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+app-section-box {
+    width: 48%;
+    display: inline-flex;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+form input[type='submit'] {
+    align-self: flex-end;
+}

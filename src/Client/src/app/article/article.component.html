@@ -1,0 +1,23 @@
+<app-section-box>
+	<div class="top">
+		<div>
+			<button *ngIf="likeActive" (click)="like()">
+        <i class="fa fa-thumbs-o-up"></i>
+        Like
+      </button>
+			<button *ngIf="!likeActive" disabled>
+        <i class="fa fa-thumbs-o-up"></i>
+        Liked
+      </button>
+		</div>
+		<div class="author">
+			{{(article$ | async)?.author.displayName}}
+		</div>
+	</div>
+	<hr />
+
+	<h1>{{(article$ | async)?.title}}</h1>
+	<p>
+		{{(article$ | async)?.content}}
+	</p>
+</app-section-box>

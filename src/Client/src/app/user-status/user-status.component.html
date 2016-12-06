@@ -1,0 +1,12 @@
+<a *ngIf="!user" routerLink="/register">
+    Login
+</a>
+<div *ngIf="user">
+	<a>
+        Hi {{user.displayName}}
+    </a>
+    |
+	<a href="javascript:void(0)" (click)="logout()">
+        Log out
+    </a>
+</div>

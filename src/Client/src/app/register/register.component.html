@@ -1,0 +1,53 @@
+<div class="wrapper">
+	<app-section-box>
+		<h1>Register</h1>
+		<form (ngSubmit)="onRegister()">
+			<label>
+                Username
+                <input type="text" name="username" required [(ngModel)]="user.Username" />
+            </label>
+
+			<label>
+                Display Name
+                <input type="text" name="displayname" required [(ngModel)]="user.DisplayName" />
+            </label>
+
+			<label>
+                Picture Url
+                <input type="url" name="picture" [(ngModel)]="user.PictureUrl" />
+            </label>
+
+			<label>
+                Role
+            </label>
+                
+                <!--<input type="text" name="role" required [(ngModel)]="user.role" />-->
+            <label>
+                Reader
+               <input type="radio" [(ngModel)]="user.role" name="role" value="reader">
+            </label>
+            <label>
+                Publisher
+                <input type="radio" [(ngModel)]="user.role" name="user.role" value="publisher">
+            </label> 
+            
+
+			<input type="submit" value="Register" />
+		</form>
+	</app-section-box>
+
+	<app-section-box>
+		<h1>Login</h1>
+		<form (ngSubmit)="onLogin()">
+			<label>
+                Username
+                <input type="text" name="username" required [(ngModel)]="userCreds.Username"/>
+            </label>
+			<label>
+                Password
+                <input type="password" name="username" required [(ngModel)]="userCreds.Password"/>
+            </label>
+			<input type="submit" value="Login" />
+		</form>
+	</app-section-box>
+</div>

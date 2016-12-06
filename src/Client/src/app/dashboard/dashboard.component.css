@@ -1,0 +1,12 @@
+table{
+    width: 100%;
+}
+
+td{
+    padding: 15px;
+}
+
+app-section-box{
+    display: flex;
+    margin-bottom: 20px;
+}

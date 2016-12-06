@@ -1,0 +1,36 @@
+<div>
+
+	<app-section-box>
+		<table>
+			<thead>
+				<tr>
+					<td>Title</td>
+					<td>Date Last Modified</td>
+					<td>Date Last Created</td>
+					<td>Actions</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr *ngFor="let article of articles">
+					<td>{{article.title}}</td>
+					<td>{{article.dateLastModifed | date}}</td>
+					<td>{{article.dateCreated | date}}</td>
+					<td>
+						<a (click)="onRemove(article.id)">
+							<i class="fa fa-trash"></i>
+						</a>
+						<a [routerLink]="['/edit', article.id]">
+							<i class="fa fa-pencil"></i>
+						</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</app-section-box>
+
+	<app-section-box *ngIf="articles">
+    <h1>Likes</h1>
+		<app-like-graph bind-data="articles" width="960" height="500">
+		</app-like-graph>
+	</app-section-box>
+</div>

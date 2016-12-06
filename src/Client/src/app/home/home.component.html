@@ -1,0 +1,21 @@
+<div *ngFor="let article of articles$ | async">
+	<app-section-box>
+		<div class="inner">
+			<div class="leftDetails">
+				<h1>
+					<a [routerLink]="['/article', article.id]">
+            {{article.title}}
+          </a>
+				</h1>
+				<p>{{article.authorName}}</p>
+			</div>
+			<div class="rightDetails">
+				<p>{{article.dateCreated | date}}</p>
+				<p><i class="fa fa-thumbs-o-up"></i> {{article.numberOfLikes}}</p>
+			</div>
+		</div>
+	</app-section-box>
+</div>
+<!--<app-section-box>
+		<h2>{{article.title}}</h2>
+	</app-section-box>-->

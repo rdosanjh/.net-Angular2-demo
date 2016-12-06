@@ -1,0 +1,4 @@
+﻿packages/
+src/SampleBlogApp/bin/
+src/SampleBlogApp/obj/
+**.user

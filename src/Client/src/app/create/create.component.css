@@ -1,0 +1,16 @@
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input[type='text'],
+textarea{
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 15px;
+    align-self: center;
+}
+
+input[type='submit']{
+    margin-left: auto;
+}

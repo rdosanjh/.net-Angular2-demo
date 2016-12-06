@@ -1,0 +1,43 @@
+.wrapper {
+    padding: 0 15vw 0 15vw;
+    border-bottom: 1px solid #1abc9c;
+    background-color: #fff;
+}
+
+.logo {
+    align-self: flex-start;
+    padding: 15px 0 15px 0;
+
+}
+
+    .logo img {
+        width: 175px;
+        height: 175px;
+    }
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+ul {
+    /*align-self: flex-end;*/
+    padding: 0;
+    justify-content: flex-end;
+    margin-left: auto;
+    list-style: none;
+    display: flex;
+}
+
+.nav-option {
+    padding: 20px;
+    flex-wrap: wrap;
+    /*flex-grow: 1;*/
+    text-align: center;
+}
+
+a {
+    text-decoration: none;   
+}

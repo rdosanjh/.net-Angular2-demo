@@ -1,0 +1,7 @@
+<div>
+	<form (ngSubmit)="onSubmit()">
+		<input type="text" placeholder="Title" [(ngModel)]="article.title" name="title" />
+		<textarea placeholder="Your article here..." rows="25" [(ngModel)]="article.content" name="content"></textarea>
+		<input type="submit" value="submit" />
+	</form>
+</div>
